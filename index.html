@@ -19,70 +19,67 @@
     <![endif]-->
   </head>
   <body ng-controller="TabController as tab">
-  	<div class="container-fluid">
-  		<div class="header">
-  			<nav>
-		      <ul class="nav nav-pills pull-right">
-		        <li ng-class="{ active: tab.isSet(1) }">
-		          <a href ng-click="tab.setTab(1)">Home</a></li>
-		        <li ng-class="{ active: tab.isSet(2) }">
-		          <a href ng-click="tab.setTab(2)">About</a></li>
-		        <li ng-class="{ active: tab.isSet(3) }">
-		          <a href ng-click="tab.setTab(3)">Contact</a></li>
-		      </ul>
-	      </nav>		    
-		    <h3 class="text-muted">Argon Design</h3>
-			</div>
-		</div>
+    <div class="container-fluid">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li ng-class="{ active: tab.isSet(1) }"><a href ng-click="tab.setTab(1)">Home</a></li>
+            <li ng-class="{ active: tab.isSet(2) }"><a href ng-click="tab.setTab(2)">About</a></li>
+            <li ng-class="{ active: tab.isSet(3) }"><a href ng-click="tab.setTab(3)">Contact</a></li>
+          </ul>
+        </nav>		    
+        <h3 class="text-muted">Argon Design</h3>
+      </div>
+    </div>
 
-		<div ng-show="tab.isSet(1)">
-			<div class="jumbotron home">
-			  <div class="container-fluid">
-				  <h1>Connecting stunning designs with ambitious clients.</h1>
-				  <p>Based in New Zealand.</p>
-				  <p><a class="btn btn-lg btn-default" href role="button" ng-click="tab.setTab(2)">Learn more</a></p>
-			  </div>
-			</div>
-		</div>
-		<div ng-show="tab.isSet(2)">
-			<div class="jumbotron about">
-			  <div class="container-fluid">
-				  <h1>About us.</h1>
-			  </div>
-			</div>
-		</div>
+    <div ng-show="tab.isSet(1)">
+      <div class="jumbotron home">
+        <div class="container-fluid">
+          <h1>Connecting stunning designs with ambitious clients.</h1>
+          <p>Based in New Zealand.</p>
+          <p><a class="btn btn-lg btn-default" href role="button" ng-click="tab.setTab(2)">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div ng-show="tab.isSet(2)">
+      <div class="jumbotron about">
+        <div class="container-fluid">
+          <h1>About us.</h1>
+        </div>
+      </div>
+    </div>
 
-		<div class="container-fluid">
-	    <div ng-show="tab.isSet(1)">
-	      <h1>The Team</h1>
-	      <ul class="list-inline">
-				  <li><img src="https://github.com/identicons/jacob.png" alt="..." height="125" width="125" class="img-circle"></li>
-				  <li><img src="https://github.com/identicons/jethro.png" alt="..." height="125" width="125" class="img-circle"></li>
-				</ul>
-			</div>
-	  	<div ng-show="tab.isSet(2)">
-	      <p class="lead">We are a group of people working to communicate with our clients effectively, so that we can create the best solutions.</p>
-	    </div>
-	    <div ng-show="tab.isSet(3)">
-	    	<div class="page-header">
-	      	<h1>Work with us</h1>
-	      </div>
-				<ul class="list-inline">
-					<li>
-						<address>
-							<strong>Jacob Fulton Buckle</strong><br>
-							<a href="mailto:jake@argondesign.co.nz">jacob@argondesign.nz</a>
-						</address>
-					</li>
-					<li>
-						<address>
-							<strong>Jethro Burr</strong><br>
-							<a href="mailto:jethro@argondesign.co.nz">jethro@argondesign.nz</a>
-						</address>
-					</li>
-				</ul>
-	    </div>
-	  </div>
+    <div class="container-fluid">
+      <div ng-show="tab.isSet(1)">
+        <h1>The Team</h1>
+        <ul class="list-inline">
+          <li><img src="https://github.com/identicons/jacob.png" alt="..." height="125" width="125" class="img-circle"></li>
+          <li><img src="https://github.com/identicons/jethro.png" alt="..." height="125" width="125" class="img-circle"></li>
+        </ul>
+      </div>
+      <div ng-show="tab.isSet(2)">
+        <p class="lead">We are a group of people working to communicate with our clients effectively, so that we can create the best solutions.</p>
+      </div>
+      <div ng-show="tab.isSet(3)">
+        <div class="page-header">
+          <h1>Work with us</h1>
+        </div>
+        <ul class="list-inline">
+          <li>
+            <address>
+              <strong>Jacob Fulton Buckle</strong><br>
+              <a href="mailto:jake@argondesign.co.nz">jacob@argondesign.nz</a>
+            </address>
+          </li>
+          <li>
+            <address>
+              <strong>Jethro Burr</strong><br>
+              <a href="mailto:jethro@argondesign.co.nz">jethro@argondesign.nz</a>
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container">
