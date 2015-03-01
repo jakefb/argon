@@ -36,10 +36,20 @@
 		</div>
 
 		<div ng-show="tab.isSet(1)">
-			<img src="img/cover1.jpg" class="img-responsive" alt="Responsive image">
+			<div class="jumbotron home">
+			  <div class="container-fluid">
+				  <h1>Connecting stunning designs with ambitious clients.</h1>
+				  <p>Based in New Zealand.</p>
+				  <p><a class="btn btn-lg btn-default" href role="button" ng-click="tab.setTab(2)">Learn more</a></p>
+			  </div>
+			</div>
 		</div>
 		<div ng-show="tab.isSet(2)">
-			<img src="img/cover2.jpg" class="img-responsive" alt="Responsive image">
+			<div class="jumbotron about">
+			  <div class="container-fluid">
+				  <h1>About us.</h1>
+			  </div>
+			</div>
 		</div>
 
 		<div class="container-fluid">
@@ -51,10 +61,7 @@
 				</ul>
 			</div>
 	  	<div ng-show="tab.isSet(2)">
-	      <h1>About Argon Design</h1>
-	      <p class="lead">
-	      	...
-	      </p>
+	      <p class="lead">We are a group of people working to communicate with our clients effectively, so that we can create the best solutions.</p>
 	    </div>
 	    <div ng-show="tab.isSet(3)">
 	    	<div class="page-header">
