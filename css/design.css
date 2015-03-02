@@ -39,6 +39,7 @@ body {
 
 /* Cover background image styles
 -------------------------------------------------- */
+
 .home {
   color: #fff;
   background-image: url('../img/cover1.jpg');
@@ -57,8 +58,26 @@ body {
 }
 
 
+/* Marketing content
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-6 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
 /* Sticky footer styles
 -------------------------------------------------- */
+
 html {
   position: relative;
   min-height: 100%;
