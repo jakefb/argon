@@ -1,3 +1,17 @@
+/* Globals
+-------------------------------------------------- */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #407ee7;
+}
+
+
+/* Base structure
+-------------------------------------------------- */
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -10,9 +24,13 @@ body {
 .btn-default:focus {
   color: #fff;
   text-shadow: none; /* Prevent inheritence from `jumbotron` */
-  background-color: rgba(0, 138, 184, 0.6);
-  border: 1px rgba(0, 138, 184, 0.6);
+  background-color: rgba(0, 173, 156, 0.6);
+  border: 1px rgba(0, 173, 156, 0.6);
 }
+
+
+/* Header
+-------------------------------------------------- */
 
 /* Custom page header */
 /* Make the masthead heading the same height as the navigation */
@@ -23,17 +41,30 @@ body {
   line-height: 40px;
 }
 
-/* Custom pills color */
+/* Custom pills */
+.nav-pills > li > a {
+  color: #6a9fb5;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-radius: 0px !important;
+}
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+  background-color: transparent;
+  border-top-color: #6a9fb5;
+  border-bottom-color: #6a9fb5;
+}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: #fff;
-  background-color: #94a928;
+  color: #f22c40;
+  background-color: transparent;
+  border: 2px solid #f22c40;
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #94a928;
-  background-color: #fff;
+  color: #f22c40;
+  background-color: #f22c40;
 }
 
 
@@ -42,16 +73,22 @@ body {
 
 .home {
   color: #fff;
-  background-image: url('../img/cover1.jpg');
+  border-top: 3px solid #e6e2e0;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  background-image: url('../img/imageone.jpg');
   background-size: cover;
 }
 .about {
   color: #fff;
-  background-image: url('../img/cover2.jpg');
+  border-top: 3px solid #e6e2e0;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  background-image: url('../img/imagetwo.jpg');
   background-size: cover;
 }
 .jumbotron h1 {
-  text-shadow: -2px 2px 1px rgba(0, 138, 184, 0.6);
+  text-shadow: -2px 2px 1px rgba(0, 173, 156, 0.6);
 }
 .jumbotron p {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
