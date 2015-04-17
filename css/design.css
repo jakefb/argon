@@ -46,7 +46,7 @@ body {
   color: #6a9fb5;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
-  border-radius: 0px !important;
+  border-radius: 0;
 }
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
@@ -59,11 +59,12 @@ body {
 .nav-pills > li.active > a:focus {
   color: #f22c40;
   background-color: transparent;
-  border: 2px solid #f22c40;
+  border-top-color: #f22c40;
+  border-bottom-color: #f22c40;
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #f22c40;
+  color: #fff;
   background-color: #f22c40;
 }
 
