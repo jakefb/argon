@@ -19,7 +19,7 @@
   var people = [
     {
       name: "Jacob Fulton Buckle",
-      details: "Hi, I'm Jacob. I've always had an interest in web design, how people use and interact with the web and a desire to build websites that people can use and enjoy. I live in Nelson, New Zealand.",
+      details: "Hi, I'm Jacob. I've always had an interest in web design, how people use and interact with the web and a desire to build websites that people can use and enjoy. I enjoy graphic design as well as coding, listening to music and snowboarding. I live in Nelson, New Zealand.",
       email: "jacob@argon.nz",
       image: "img/jacob.jpg"
     },
