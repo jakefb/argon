@@ -49,17 +49,27 @@
       </div>
     </div>
 
-    <div class="container-fluid" data-ng-controller="ContentController as content">
+    <div class="container" data-ng-controller="ContentController as content">
       <div class="marketing" data-ng-show="tab.isSet(1)">
         <h1 class="text-center">Team members</h1>
-        <!-- Three columns of text below the carousel -->
+        <hr>
         <div class="row">
           <div class="col-lg-6" data-ng-repeat="item in content.items">
-            <img class="img-circle" data-ng-src="https://github.com/identicons/{{item.image}}" style="width: 140px; height: 140px;">
+            <p><img data-ng-src="{{item.image}}" class="img-circle"></p>
             <h2>{{item.name}}</h2>
             <p>{{item.details}}</p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+          </div>
+        </div>
+        <h1 class="text-center">Argon in production</h1>
+        <hr>
+        <div class="row">
+          <div class="col-lg-6" data-ng-repeat="item in content.sites">
+            <a href="{{item.url}}"><img data-ng-src="{{item.image}}" class="img-responsive"></a>
+            <h2>{{item.name}}</h2>
+            <p>{{item.details}}</p>
+            <p><a class="btn btn-default" href="{{item.url}}" role="button">View {{item.name}} &raquo;</a></p>
+          </div>
+        </div>
       </div>
       <div data-ng-show="tab.isSet(2)">
         <p class="lead">Your business calls for the connection, professionalism and class demanded by modern customers. You need the developers, creators and thinkers of today. People can tell you anything, but the end results you need are the real ones. Get them with Argon.</p>
@@ -81,7 +91,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">&copy; 2015 Argon Design.</p>
+        <p class="text-muted">&copy; 2015 Argon.</p>
       </div>
     </footer>
 
