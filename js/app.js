@@ -25,7 +25,7 @@
     },
     {
       name: "Jethro Burr",
-      details: "Bacon ipsum dolor amet alcatra chuck filet mignon spare ribs pork loin fatback tail salami shank short ribs turducken. Fatback salami pastrami leberkas sausage corned beef jerky, turducken ground round pork chop ham hock. Picanha sirloin strip steak shoulder ground round bacon, biltong fatback ham hock spare ribs tail. Pancetta strip steak landjaeger corned beef. Bacon brisket sausage ham hock ground round.",
+      details: "Hey, my name's Jethro. I'm a BSc student at Victoria University. I love to bring together the creative side of life with my experience in Computer Science to create some truly great things. I'm an avid photographer, love to head out running and enjoy being with people.",
       email: "jethro@argon.nz",
       image: "img/jethro.jpg"
     }
