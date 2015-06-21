@@ -1,0 +1,21 @@
+<div class="marketing">
+  <h1 class="text-center">Team members</h1>
+  <hr>
+  <div class="row">
+    <div class="col-lg-6" data-ng-repeat="item in content.items">
+      <p><img data-ng-src="{{item.image}}" class="img-circle"></p>
+      <h2>{{item.name}}</h2>
+      <p>{{item.details}}</p>
+    </div>
+  </div>
+  <h1 class="text-center">Argon in production</h1>
+  <hr>
+  <div class="row">
+    <div class="col-lg-6" data-ng-repeat="item in content.sites">
+      <a href="{{item.url}}"><img data-ng-src="{{item.image}}" class="img-responsive"></a>
+      <h2>{{item.name}}</h2>
+      <p>{{item.details}}</p>
+      <p><a class="btn btn-default" href="{{item.url}}" role="button">View {{item.name}} &raquo;</a></p>
+    </div>
+  </div>
+</div>

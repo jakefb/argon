@@ -6,13 +6,55 @@
     this.sites = sites
   })
 
-  app.controller('TabController', function() {
-    this.tab = 1
-    this.setTab = function(selectedTab) {
-      this.tab = selectedTab
+  app.directive('contentTabs', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'content-tabs.html',
+      controller: function() {
+        this.tab = 1
+        this.isSet = function(checkTab) {
+          return this.tab === checkTab
+        }
+        this.setTab = function(setTab) {
+          this.tab = setTab
+        }
+      },
+      controllerAs: 'tab'
     }
-    this.isSet = function(checkTab) {
-      return this.tab === checkTab
+  })
+
+  app.directive('tabHome', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'tab-home.html'
+    }
+  })
+
+  app.directive('tabAbout', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'tab-about.html'
+    }
+  })
+
+  app.directive('contentHome', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'content-home.html'
+    }
+  })
+
+  app.directive('contentAbout', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'content-about.html'
+    }
+  })
+
+  app.directive('contentContact', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'content-contact.html'
     }
   })
 
