@@ -33,6 +33,13 @@ body {
   padding-bottom: 40px;
   color: #68615e;
 }
+h1,
+h2 {
+  font-family: 'Bree Serif', serif;
+}
+a {
+  font-family: 'Raleway', sans-serif;
+}
 
 
 /* Header
@@ -89,16 +96,16 @@ body {
 }
 .home {
   background-image: url('../img/imageone.jpg');
-
 }
 .about {
   background-image: url('../img/imagetwo.jpg');
 }
 .jumbotron h1 {
-  text-shadow: -2px 2px 1px rgba(0, 173, 156, 0.6);
+  text-shadow: -2px 2px 3px rgba(0, 173, 156, 0.6);
 }
 .jumbotron p {
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 
@@ -109,9 +116,6 @@ body {
 .marketing .col-lg-6 {
   margin-bottom: 20px;
   text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
 }
 .marketing .col-lg-4 p {
   margin-right: 10px;
@@ -129,6 +133,9 @@ body {
 }
 .marketing .img-responsive:hover {
   opacity: 1;
+}
+.page-header {
+
 }
 
 
