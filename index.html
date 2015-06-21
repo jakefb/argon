@@ -22,76 +22,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body data-ng-controller="TabController as tab">
-    <div class="container-fluid">
-      <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li data-ng-class="{ active: tab.isSet(1) }"><a href data-ng-click="tab.setTab(1)">HOME</a></li>
-            <li data-ng-class="{ active: tab.isSet(2) }"><a href data-ng-click="tab.setTab(2)">ABOUT</a></li>
-            <li data-ng-class="{ active: tab.isSet(3) }"><a href data-ng-click="tab.setTab(3)">CONTACT</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Argon</h3>
-      </div>
-    </div>
+  <body ng-controller="ContentController as content">
 
-    <div data-ng-show="tab.isSet(1)">
-      <div class="jumbotron home">
-        <div class="container-fluid">
-          <h1>Connecting stunning designs with ambitious clients.</h1>
-          <p>Based in New Zealand.</p>
-          <p><a class="btn btn-lg btn-default" href role="button" data-ng-click="tab.setTab(2)">Learn more</a></p>
-        </div>
-      </div>
-    </div>
-    <div data-ng-show="tab.isSet(2)">
-      <div class="jumbotron about">
-        <div class="container-fluid">
-          <h1>About us.</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" data-ng-controller="ContentController as content">
-      <div class="marketing" data-ng-show="tab.isSet(1)">
-        <h1 class="text-center">Team members</h1>
-        <hr>
-        <div class="row">
-          <div class="col-lg-6" data-ng-repeat="item in content.items">
-            <p><img data-ng-src="{{item.image}}" class="img-circle"></p>
-            <h2>{{item.name}}</h2>
-            <p>{{item.details}}</p>
-          </div>
-        </div>
-        <h1 class="text-center">Argon in production</h1>
-        <hr>
-        <div class="row">
-          <div class="col-lg-6" data-ng-repeat="item in content.sites">
-            <a href="{{item.url}}"><img data-ng-src="{{item.image}}" class="img-responsive"></a>
-            <h2>{{item.name}}</h2>
-            <p>{{item.details}}</p>
-            <p><a class="btn btn-default" href="{{item.url}}" role="button">View {{item.name}} &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-      <div data-ng-show="tab.isSet(2)">
-        <p class="lead">Your business calls for the connection, professionalism and class demanded by modern customers. You need the developers, creators and thinkers of today. People can tell you anything, but the end results you need are the real ones. Get them with Argon.</p>
-      </div>
-      <div data-ng-show="tab.isSet(3)">
-        <div class="page-header">
-          <h1>Work with us</h1>
-        </div>
-        <ul class="list-inline">
-          <li data-ng-repeat="item in content.items">
-            <address>
-              <strong>{{item.name}}</strong><br>
-              <a href="mailto:{{item.email}}">{{item.email}}</a>
-            </address>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <content-tabs></content-tabs>
 
     <footer class="footer">
       <div class="container">
