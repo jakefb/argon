@@ -61,14 +61,14 @@
   var people = [
     {
       name: "Jacob Fulton Buckle",
-      details: "Hi, I'm Jacob. I've always had an interest in web design, how people use and interact with the web and a desire to build websites that people can use and enjoy. I enjoy graphic design as well as coding, listening to music and snowboarding. I live in Nelson, New Zealand.",
-      email: "jacob@argon.nz",
+      details: "Hi, I'm Jacob. I've always had an interest in web design, how people use and interact with the web and a desire to build websites that people can use and enjoy. I enjoy graphic design as well as coding, mixing music and snowboarding. I live in Nelson, New Zealand.",
+      email: "getargon@gmail.com",
       image: "img/jacob.jpg"
     },
     {
       name: "Jethro Burr",
-      details: "Hey, my name's Jethro. I'm a BSc student at Victoria University. I love to bring together the creative side of life with my experience in Computer Science to create some truly great things. I'm an avid photographer, love to head out running and enjoy being with people.",
-      email: "jethro@argon.nz",
+      details: "Hello, I'm Jethro. I'm an Economics student at Victoria University of Wellington. I love to bring together the creative side of life with my experience in things more techncial to create some truly great things. I'm an avid photographer, love to head out running and enjoy making a good coffee.",
+      email: "jedaburr@gmail.com",
       image: "img/jethro.jpg"
     }
   ]
@@ -76,13 +76,13 @@
   var sites = [
     {
       name: "Fastcast",
-      details: "Fastcast is a peer-to-peer video networking site, developed for streaming high definition content.",
+      details: "Fastcast is a lightning-fast streaming site, designed for streaming the content you love.",
       url: "http://fastcast.nz",
       image: "img/fastcast.jpg"
     },
     {
       name: "Astra",
-      details: "Astra is an experimental AngularJS and Bootstrap template. We plan on developing this into a more complete site in the future.",
+      details: "Astra is an experimental page built with AngularJS and Bootstrap. We plan on developing this into an even faster, complete site in the future.",
       url: "http://chipboard.github.io/astra",
       image: "img/astra.jpg"
     },
